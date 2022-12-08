@@ -160,7 +160,7 @@ module FHASH_MODULE_NAME
   type FHASH_TYPE_ITERATOR_NAME
     private
 
-    integer :: bucket_id
+    integer(int_ptr_kind()) :: bucket_id
     type(node_type), pointer :: node_ptr => null()
     type(FHASH_TYPE_NAME), pointer :: fhash_ptr => null()
 
